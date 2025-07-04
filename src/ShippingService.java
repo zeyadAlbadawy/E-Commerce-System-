@@ -3,8 +3,10 @@ import java.util.*;
 public class ShippingService {
     public static void shipItems(List<Shippable> items) {
         System.out.println("** Shipment notice **");
+        // Create Two maps
+        // 1 => name -> weight
+        // 2 => name -> quantity
 
-        // Use LinkedHashMap to preserve order
         Map<String, Integer> counted = new LinkedHashMap<>();
         Map<String, Double> weightPerItem = new LinkedHashMap<>();
 
@@ -22,7 +24,6 @@ public class ShippingService {
             double totalItemWeight = quantity * singleWeight;
             totalWeight += totalItemWeight;
 
-            // ✅ Now we print one line per product with total quantity and total weight
             System.out.printf("%dx %-12s %.0fg\n", quantity, name, totalItemWeight * 1000);
         }
 
