@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Products cheese = new ShippableProduct("Cheese", 100, 5, false, 0.2);
+        Products cheese = new ShippableProduct("Cheese", 100, 5, false, 0.3);
         Products biscuits = new ShippableProduct("Biscuits", 150, 3, false, 0.7);
         Products tv = new ShippableProduct("TV", 2000, 200, false, 10);
         Products scratchCard = new NonShippableProduct("Scratch Card", 50, 10, false);
